@@ -1,0 +1,191 @@
+
+
+body{
+    height : 100%;
+    width : 100%;
+    
+    margin : 0;
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    text-align: center;
+    background-color: #79A68A;
+    color : #FBCD2E;
+    width : 100%;
+    
+}
+
+header h1 a{
+    text-decoration: none;
+    color : #FBCD2E;
+}
+
+#content{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#menus{
+    
+    display: flex;
+    height: 100%;
+    width : 100%;
+    margin : auto;
+    margin-top:5vh;
+    
+    justify-content: space-around;
+    align-content: space-around;
+    
+    flex-wrap: wrap;
+    flex-grow : 2;
+}
+
+#menus img {
+    height : 220px;
+    width:180px;
+    box-shadow: 0px 0px 2px 1px rgb(207, 201, 207);
+    margin-bottom:10px;
+    
+    
+}
+
+#menus1 {
+    width:auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: space-around;
+    margin-top:20px;
+    margin : auto;
+    flex-wrap: wrap;
+}
+
+#menus2{
+    width:auto;
+    display: flex;
+    justify-content: space-around;
+    margin-top : 20px;
+    margin : auto;
+    flex-wrap: wrap;
+    
+}
+
+#prochainement {
+    height : auto;
+    margin : auto;
+    flex-grow : 1;
+    
+
+}
+
+#prochainement p{
+    margin : auto;
+    text-align : center;
+    font-size : 25px;
+    background-color: #79A68A;
+    color : #FBCD2E;
+    width : 220px;
+    height : auto;
+    padding : 5px;
+    margin-top:80px;
+    margin-bottom: 80px;
+    border-radius: 10px;
+}
+
+
+
+footer{
+    width : 100%;
+    display: flex;
+    background-color: #79A68A;
+    color : #FBCD2E;
+    justify-content: space-between;
+    position : fixed;
+    bottom : 0;
+    height : 10%;
+    overflow: hidden;
+    padding:auto;
+    
+    
+    
+}
+
+footer a{
+    text-decoration: none;
+    margin-top : auto;
+    margin-bottom : auto;
+    color : #FBCD2E;
+}
+
+footer p{
+    font-size: 20px;
+    margin : auto;
+    margin-left : 10px;
+    margin-right : 20px;
+}
+
+
+                /* CSS concernant les pages avec le menu */
+
+#menuImage {
+    display: flex;
+    height: auto;
+    align-items: center;
+    align-content: space-around;
+    
+    
+}
+
+#menuImage img {
+    width : 70%;
+    height:80%; 
+    margin : auto;
+    margin-top:20px;
+    margin-bottom: 80px;
+}
+
+
+                    /* CSS concernant les media queries */
+
+
+@media all  and (max-width : 470px){
+
+    #menus img{
+        height : 180px;
+        width : 140px;
+    }
+    #prochainement {
+        /* margin-top : 10px; */
+        margin-bottom : 80px;
+        
+    }
+
+    #prochainement p{
+        margin : auto;
+        width:150px;
+        height : 20px;
+        font-size : 20px;
+    }
+
+    header {
+        height : 65px;
+        display : flex;
+    }
+
+    header h1{
+        margin : auto;
+
+
+    }
+
+    footer {
+        height : 30px;
+    }
+
+    footer p {
+        margin : auto;
+    }
+
+}
