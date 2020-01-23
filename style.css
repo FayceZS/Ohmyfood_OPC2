@@ -129,14 +129,64 @@ footer p{
 
                 /* CSS concernant les pages avec le menu */
 
-#menuImage {
+.menuImageSection {
     display: flex;
-    height: auto;
-    align-items: center;
-    align-content: space-around;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.menuImage {
+    display: flex;
+    flex-direction : column;
+    height: max-content;
+    width : 500px;
+    border : 1px solid black;
+    margin : auto;
+    margin-top : 20px;
+    margin-bottom : 100px;
+    text-align : center;
+    background: linear-gradient(135deg, rgba(255,228,196,1) 0%, rgba(255,228,196,0.94) 71%, rgba(255,252,254,0.92) 100%);
     
     
 }
+
+.menuImage i{
+    text-align: center;
+    font-size : 50px;
+    margin-top: 20px;
+}
+
+.menuImage div{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menuImage p{
+    font-size : 15px;
+}
+
+.menuImage h3{
+    
+}
+
+#menuImage1 span {
+    height : 3px;
+    width:150px;
+    background-color : black;
+}
+
+.menuContent{
+    margin-left : 20px;
+    margin-right : 20px;
+}
+
+.menuContent :nth-child(1){
+    flex: 1;
+    text-align: left;
+}
+
+
 
 #menuImage img {
     width : 70%;
@@ -144,6 +194,21 @@ footer p{
     margin : auto;
     margin-top:20px;
     margin-bottom: 80px;
+}
+
+.footerMenuImage {
+    display: flex;
+    justify-content: center;
+}
+
+.footerMenuImage i {
+    font-size: 25px;
+    margin-right : 4px;
+}
+
+.footerMenuImage h5{
+    font-size : 25px;
+    
 }
 
 
@@ -186,6 +251,7 @@ footer p{
 
     footer p {
         margin : auto;
+        font-size : 15px;
     }
 
 }
