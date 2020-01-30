@@ -2,10 +2,9 @@
 <html lang="fr">
     <head>
             <meta charset="utf-8">
+            <title>Menu du restaurant le chic à la française</title>
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-            <link href="smartphone.css" rel="stylesheet" media="only screen and (max-device-width: 780px)" />
-            <link rel="stylesheet" media="all and (min-device-width:1px)" href="style.css">
+            <link rel="stylesheet" href="style.css">
     </head>
 
     <body>
@@ -14,13 +13,43 @@
             <h1><strong><a href="index.html">ohmyfood</a></strong></h1>
         </header>
 
-        <section id="menuImage">
-            <img src="Menus/menu-2.png">
+        <section class="menuImageSection">
+            
+            <div class="menuImage" id="menuImage2">
+                
+                <h3>Le chic à la française</h3>
+                
+                <section class = "menuItems firstItem">
+                <div><span class="border firstItem"></span><h5>Pour se mettre en appétit</h5><span class="border firstItem"></span></div>
+                <div class="menuContent" ><p>Tartare de poulpe acidulé aux zests d'orange</p><p>79€</p></div>
+                <div class="menuContent" ><p>Velouté de légumes d'antan</p><p>57€</p></div>
+                <div class="menuContent"><p>Soupe à l'oignon revisitée</p><p>57€</p></div>
+                
+                </section>
+
+                <section class = "menuItems secondItem">
+                    <div><span class="border secondItem"></span><h5>Plaisir des papilles</h5><span class="border secondItem"></span></div>
+                    <div class="menuContent"><p>Coquilles Saint-Jacques accompagnées d'une purée de panais</p><p>95€</p></div>
+                    <div class="menuContent"><p>Magret de canard et parmentier de pommes de terres</p><p>88€</p></div>
+                    <div class="menuContent"><p>Pigeonneau d'Ille et Vilaine sur son lit de gnocchis aux légumes</p><p>175€</p></div>
+                    
+                    </section>
+
+                <section class = "menuItems thirdItem">
+                        <div><span class="border thirdItem"></span><h5>Gourmandises sucrées</h5><span class="border thirdItem"></span></div>
+                        <div class="menuContent"><p>Pétales de violettes glacés et purée de noisettes</p><p></p></div>
+                        <div class="menuContent"><p>Fondant au chocolat revisité</p><p></p></div>
+                        <div class="menuContent"><p>Millefeuille croustillant</p><p></p></div>
+                        
+                    </section>
+
+                
+            </div>
         </section>
 
         <footer>
-            <p>Mentions Légales</p>
-            <p>Contactez-nous</p>
+            <button onclick="window.location.href = 'mentionLegales.html'">Mentions Légales</button>
+            <button onclick="window.location.href = 'mailto:contact@ohmyfood.com'">Contactez-nous</button>
 
         </footer>
 
