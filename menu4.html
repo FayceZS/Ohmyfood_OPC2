@@ -2,10 +2,9 @@
 <html lang="fr">
     <head>
             <meta charset="utf-8">
+            <title>Menu du restaurant La palette du goût</title>
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-            <link href="smartphone.css" rel="stylesheet" media="only screen and (max-device-width: 780px)" />
-            <link rel="stylesheet" media="all and (min-device-width:1px)" href="style.css">
+            <link rel="stylesheet" href="style.css">
     </head>
 
     <body>
@@ -14,13 +13,43 @@
             <h1><strong><a href="index.html">ohmyfood</a></strong></h1>
         </header>
 
-        <section id="menuImage">
-            <img src="Menus/menu-1.png">
+        <section class="menuImageSection">
+            
+            <div class="menuImage" id="menuImage4">
+                <i class="fas fa-music"></i>
+                <h3>La palette du goût</h3>
+                
+                <section class = "menuItems">
+                <div><span class="border leftBorder"></span><h5>Esquisse</h5><span class="border rightBorder"></span></div>
+                <div class="menuContent"><p>Fricassée d'escargots au piment d'espelette</p><p>60€</p></div>
+                <div class="menuContent"><p>Oeuf au plat assaisonné à la truffe sur lit de caviar</p><p>55€</p></div>
+                <div class="menuContent"><p>Foie gras de canard mi-cuit et ses copeaux de truffe noire</p><p>65€</p></div>
+                
+                </section>
+
+                <section class = "menuItems">
+                    <div><span class="border leftBorder"></span><h5>Oeuvre de maître</h5><span class="border rightBorder"></span></div>
+                    <div class="menuContent"><p>Filet de boeuf aux herbes accompagné de sa ribambelle de légumes</p><p>70€</p></div>
+                    <div class="menuContent"><p>Parmentier de queue de boeuf à la truffe noire sur sa purée de panais</p><p>85€</p></div>
+                    <div class="menuContent"><p>Filet de turbot aux agrumes</p><p>125€</p></div>
+                    
+                    </section>
+
+                <section class = "menuItems">
+                        <div><span class="border leftBorder"></span><h5>Au sommet de l'art</h5><span class="border rightBorder"></span></div>
+                        <div class="menuContent"><p>Paris-Brest revisité</p><p>55€</p></div>
+                        <div class="menuContent"><p>Macaron au chocolat d'exception et glace à la vanille de Madagascar</p><p>65€</p></div>
+                        <div class="menuContent"><p>Mousse au chocolat au piment d'espelette et à la truffe noire</p><p>60€</p></div>
+                        
+                    </section>
+
+                
+            </div>
         </section>
 
         <footer>
-            <p>Mentions Légales</p>
-            <p>Contactez-nous</p>
+            <button onclick="window.location.href = 'mentionLegales.html'">Mentions Légales</button>
+            <button onclick="window.location.href = 'mailto:contact@ohmyfood.com'">Contactez-nous</button>
 
         </footer>
 
