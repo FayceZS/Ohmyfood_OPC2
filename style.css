@@ -1,6 +1,10 @@
-
+html {
+    width : 100%;
+    height : 100%;
+}
 
 body{
+    
     height : 100%;
     width : 100%;
     
@@ -10,10 +14,12 @@ body{
 }
 
 header{
+    
     text-align: center;
     background-color: #79A68A;
     color : #FBCD2E;
     width : 100%;
+    
     
 }
 
@@ -22,13 +28,13 @@ header h1 a{
     color : #FBCD2E;
 }
 
-#content{
+#content{                       /*CSS concernant les menus sur la page principal*/
     display: flex;
     flex-direction: column;
     
 }
 
-#menus{
+#menus{             
     
     display: flex;
     height: 100%;
@@ -52,49 +58,202 @@ header h1 a{
     
 }
 
-#menus1 {
-    width:auto;
+.menuAccueil {
+    height : 220px;
+    width:180px;
+    box-shadow: 0px 0px 2px 1px rgb(207, 201, 207);
+    margin-bottom:10px;
     display: flex;
-    justify-content: space-around;
-    align-items: space-around;
-    margin-top:20px;
-    margin : auto;
-    flex-wrap: wrap;
-}
-
-#menus2{
-    width:auto;
-    display: flex;
-    justify-content: space-around;
-    margin-top : 20px;
-    margin : auto;
-    flex-wrap: wrap;
+    
     
 }
+
+
+
+.menuAccueil a {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin : auto;
+    font-size: 14px;
+}
+
+.menuAccueil p{
+    font-size : 20px;
+}
+
+#firstMenuAccueil{
+    background: linear-gradient(135deg, rgba(255,212,255,1) 0%, rgba(255,212,255,1) 74%, rgba(255,226,255,1) 100%);
+    display : flex;
+    text-align: center;
+}
+
+#firstMenuAccueil img{
+    width : 25px;
+    height : 20px;
+    margin : 0;
+    box-shadow: none;
+}
+
+#firstMenuAccueil a {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin : auto;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: 'Zhi Mang Xing', cursive;
+}
+
+#firstMenuAccueil span {
+    margin-top: 15px;
+    font-size : 15px;
+    text-transform: uppercase;
+    font-family: 'Short Stack', cursive;
+}
+
+#secondMenuAccueil {
+    background: linear-gradient(135deg, rgba(254,254,226,1) 0%, rgba(255,255,243,1) 100%);
+    
+}
+
+#secondMenuAccueil span{
+    background: linear-gradient(135deg, rgba(210,105,30,1) 0%, rgba(139,0,139,1) 58%, rgba(39,77,230,1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size : 12px;
+  
+}
+
+#secondMenuAccueil a  {
+    
+    color : rgba(210,105,30,1);
+    font-size : 20px;
+    font-family: "Oleo Script", cursive;
+}
+
+#secondMenuAccueil p{
+    margin-top: 10px;
+    font-family: "PT Serif", serif;
+}
+
+#thirdMenuAccueil {
+    background: linear-gradient(135deg, rgb(221, 228, 250) 0%, rgb(242, 244, 250) 58%, rgb(242, 244, 250) 100%);
+}
+
+#thirdMenuAccueil a{
+    background: linear-gradient(135deg, rgba(14,75,239,1) 0%, rgba(72,119,244,1) 58%, rgba(147,174,248,1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Dancing Script", cursive;
+}
+
+#thirdMenuAccueil p{
+    font-family: "Bad Script", cursive;
+}
+
+#fourthMenuAccueil{
+    background-color: #fdfffd;
+}
+
+#fourthMenuAccueil a{
+    background: linear-gradient(135deg, rgba(16,107,33,1) 0%, rgba(20,134,41,1) 12%, rgba(31,210,64,1) 40%, rgba(230,241,186,1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight : bold;
+  font-family: "Kaushan Script", cursive;
+}
+
+#fourthMenuAccueil p{
+    font-family: "Bad Script", cursive;
+}
+
+
+#menus a{                                   /*Animation des menus de la page principale*/
+    transition-property: all;
+    transition-duration: 900ms;
+    opacity: 0.7;
+    
+
+}
+
+
+#menus a:hover {                    
+    transform: scale(1.4);
+    opacity: 1;
+}
+
+#firstMenuAccueil a:hover{
+    transform : scale(1.75);
+}
+
+
 
 #prochainement {
     height : auto;
     margin : auto;
     flex-grow : 1;
+    display: flex;
+    justify-content: center;
     
 
 }
 
 #prochainement p{
-    margin : auto;
-    text-align : center;
+    width: auto;
+}
+
+.loading {
+    font-size: 30px;
+  }
+  
+  .loading:after {
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: bottom;
+    -webkit-animation: ellipsis steps(4,end) 2s infinite;      
+    animation: ellipsis steps(4,end) 2s infinite;
+    content: "\2026"; /* ascii code for the ellipsis character */
+    width: 0px;
+  }
+  
+
+
+#prochainement p{
+    
+    
     font-size : 25px;
     background-color: #79A68A;
     color : #FBCD2E;
-    width : 220px;
+    width : 180px;
     height : auto;
     padding : 5px;
+    padding-left:20px;
+    padding-right : 20px;
     margin-top:80px;
     margin-bottom: 80px;
     border-radius: 10px;
 }
 
-
+  @keyframes ellipsis {                 /*Animations points de suspension prochainement*/
+    to {
+      width: 1.25em;    
+    }
+  }
+  
+  @-webkit-keyframes ellipsis {
+    to {
+      width: 1.25em;    
+    }
+  }
 
 footer{
     width : 100%;
@@ -106,10 +265,38 @@ footer{
     bottom : 0;
     height : 10%;
     overflow: hidden;
-    padding:auto;
     
     
     
+    
+}
+
+@keyframes shake {                          /*keyframe pour l'animation wiggle des bouttons*/
+    10%, 90% {
+      transform: translate3d(-3px, 0, 0);
+    }
+  
+    20%, 80% {
+      transform: translate3d(5px, 0, 0);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+  
+    40%, 60% {
+      transform: translate3d(4px, 0, 0);
+    }
+  }
+
+footer button {
+    text-decoration: none;
+    background-color: #79A68A;
+    border: none;
+    animation: shake 5s cubic-bezier(.36,.07,.19,.97) infinite both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
 }
 
 footer a{
@@ -119,42 +306,40 @@ footer a{
     color : #FBCD2E;
 }
 
-footer p{
+footer button{
     font-size: 20px;
     margin : auto;
     margin-left : 10px;
     margin-right : 20px;
+    color : #FBCD2E;
+    cursor : pointer;
 }
 
 
                 /* CSS concernant les pages avec le menu */
 
-.menuImageSection {
+.menuImageSection {                         /*On parle de la section contenant le menu*/
     display: flex;
     flex-direction: column;
     justify-content: center;
+    
 }
 
-.menuImage {
+.menuImage {                                /* On parle du menu conteneur en entier */
     display: flex;
     flex-direction : column;
     height: max-content;
-    width : 500px;
-    border : 1px solid black;
+    width : auto;
     margin : auto;
     margin-top : 20px;
     margin-bottom : 100px;
     text-align : center;
-    background: linear-gradient(135deg, rgba(255,228,196,1) 0%, rgba(255,228,196,0.94) 71%, rgba(255,252,254,0.92) 100%);
+    
+
     
     
 }
 
-.menuImage i{
-    text-align: center;
-    font-size : 50px;
-    margin-top: 20px;
-}
 
 .menuImage div{
     display:flex;
@@ -163,22 +348,333 @@ footer p{
 }
 
 .menuImage p{
-    font-size : 15px;
-}
-
-.menuImage h3{
+    font-size : 12px;
+    display : flex;
+    width : auto;
     
 }
 
-#menuImage1 span {
+.menuImage h3{
+    font-family: 'Dancing Script', cursive;
+}
+
+
+
+#menuImage1 {                                   /*On parle des menus propres à chaque restaurant*/
+    font-family: 'Sniglet', cursive;
+    background: linear-gradient(135deg, rgba(255,212,255,1) 0%, rgba(255,212,255,1) 74%, rgba(255,226,255,1) 100%);
+    
+}
+
+#menuImage1 img {
+    width : 55px;
+    height : 50px;
+    align-self: center;
+    margin-top: 35px;
+}
+
+
+
+#menuImage1 p {
+    font-size: 14px;
+}
+
+#menuImage1 .footerMenuImage{
+    display: flex;
+    justify-content: center;
+}
+
+#menuImage1 .footerMenuImage img {
+    width : 35px;
+    height: 30px;
+    margin-top: 0px;
+}
+
+#menuImage1 .footerMenuImage h5 {
+    font-family: 'Dancing Script', cursive;
+}
+
+#menuImage1 h5{                                     /*Animation soulignement des titres*/
+background: linear-gradient(to top, #f7b234 0%, #e2fa07 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
+  transition: background-size .5s;
+  cursor: default;
+}
+
+#menuImage1 h5:hover{
+    background-size: 100% 100%;
+}
+
+#menuImage2 {
+    background: linear-gradient(135deg, rgba(254,254,226,1) 0%, rgba(255,255,243,1) 100%);
+    
+}
+
+
+
+#menuImage2 p {
+    
+    font-size : 14px;
+}
+
+#menuImage2 h3 {
+    margin : auto;
+    margin-top : 30px;
+    margin-bottom: 30px;
+    width: max-content;
+    background: linear-gradient(135deg, rgba(210,105,30,1) 0%, rgba(139,0,139,1) 58%, rgba(39,77,230,1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#menuImage2 .menuItems div{
+    justify-content: space-around;
+}
+
+#menuImage2 h5{                                     /*Animation soulignement des titres*/
+    background: linear-gradient(to top, #f7b234 0%, rgba(139,0,139,1) 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
+      transition: background-size .5s;
+      cursor: default;
+    }
+    
+#menuImage2 h5:hover{
+        background-size: 100% 100%;
+    }
+
+
+
+#menuImage2 .firstItem {                        
+    color:rgba(210,105,30,1);
+    
+}
+
+#menuImage2 .firstItem h5 {                     /*Animation soulignement des titres*/
+    background: linear-gradient(to top, #f7b234 0%, rgba(210,105,30,1) 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
+      transition: background-size .5s;
+      cursor: default;
+}
+
+#menuImage2 .firstItem h5:hover{
+    background-size: 100% 100%;
+}
+
+#menuImage2 .secondItem{
+    color : rgba(139,0,139,1);
+}
+
+#menuImage2 .secondItem h5{
+    background: linear-gradient(to top, rgba(139,0,139,1) 0%, rgba(139,0,139,1) 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
+      transition: background-size .5s;
+      cursor: default;
+}
+
+#menuImage2 .secondItem h5:hover{
+    background-size: 100% 100%;
+}
+
+#menuImage2 .thirdItem{
+    color : rgba(39,77,230,1);
+    margin-bottom : 30px;
+}
+
+#menuImage2 .thirdItem h5{
+    background: linear-gradient(to top, rgba(39,77,230,1) 0%, rgb(54, 89, 230) 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
+      transition: background-size .5s;
+      cursor: default;
+}
+
+#menuImage2 .thirdItem h5:hover{
+    background-size: 100% 100%;
+}
+
+
+
+#menuImage3 {
+    background-color: #edf4ed ;
+    padding-bottom: 60px;
+}
+
+
+#menuImage3 h3 {
+    margin : auto;
+    margin-top : 30px;
+    margin-bottom: 30px;
+    font-size: 40px;
+    font-family: 'Dancing Script', cursive;
+    width: max-content;
+    padding-left: 5px;
+    background: linear-gradient(135deg, rgba(14,75,239,1) 0%, rgba(72,119,244,1) 58%, rgba(147,174,248,1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+#menuImage3 h5{                                     /*Animation soulignement des titres*/
+    font-weight: 700;
+    font-family: 'Petit Formal Script', cursive;
+    background: linear-gradient(to top, rgba(14,75,239,1) 0%, rgba(147,174,248,1) 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
+      transition: background-size .5s;
+      cursor: default;
+    }
+    
+#menuImage3 h5:hover{
+        background-size: 100% 100%;
+    }
+
+#menuImage3 p{
+    margin-right: 0;
+    font-size : 11px;
+    font-weight: 700;
+    font-family: 'Petit Formal Script', cursive;
+    
+}
+
+#menuImage3 .menuContent{
+    width: 80%;
+    margin : auto;
+}
+
+#menuImage3 .menuContent :nth-child(2){
+    font-size: 18px;
+
+}
+
+
+
+#menuImage4 {
+
+    background-color: #f7fcf9;
+    max-width: 400px;
+    display: flex;
+    margin: auto;
+    margin: 30px 5px 60px 5px;
+    padding-bottom : 40px;
+    align-self: center;
+}
+
+#menuImage4 p{
+    width: max-content;
+    margin-right: 0;
+    font-size : 11px;
+    font-family: 'Petit Formal Script', cursive;
+    
+}
+
+#menuImage4 .menuContent{
+    width: auto;
+  
+    
+}
+
+
+
+#menuImage4 h3 {
+    margin : auto;
+    margin-top : 30px;
+    margin-bottom: 30px;
+    font-size : 35px;
+    width: auto;
+    background: linear-gradient(135deg, rgba(16,107,33,1) 0%, rgba(20,134,41,1) 26%, rgba(31,210,64,1) 57%, rgba(230,241,186,1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#menuImage4 h5{                                     /*Animation soulignement des titres*/
+    font-weight: normal;
+    font-size: 12px;
+    word-wrap: nowrap;
+    width : 140px;
+    font-family: 'Petit Formal Script', cursive;
+    background: linear-gradient(to top, rgba(16,107,33,1) 0%, rgba(31,210,64,1) 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
+      transition: background-size .5s;
+      cursor: default;
+    }
+    
+#menuImage4 h5:hover{
+        background-size: 100% 100%;
+    }
+
+
+
+
+
+.menuItems .border {                            /*On parle des bordures dans les menus*/
     height : 3px;
     width:150px;
     background-color : black;
+    margin : auto;
 }
 
-.menuContent{
+#menuImage2 .border{
+    position : relative;
+    width : 100px;
+    margin : 0;
+    
+}
+
+#menuImage2 .border.firstItem {
+    background-color: rgba(210,105,30,1) ;
+}
+#menuImage2 .border.secondItem{
+    background-color: rgba(139,0,139,1);
+}
+
+#menuImage2 .border.thirdItem{
+    background-color: rgba(39,77,230,1);
+}
+
+#menuImage3 .border{
+    position : relative;
+    width : 150px;
+    margin : 0;
+    margin-left: 25px;
+    margin-right: 25px;
+    
+}
+
+#menuImage3 .border.firstItem {
+    background-color: rgba(14,75,239,1);
+}
+#menuImage3 .border.secondItem{
+    background-color: rgba(72,119,244,1);
+}
+
+#menuImage3 .border.thirdItem{
+    background-color: rgba(147,174,248,1);
+}
+
+#menuImage4 .border{
+    
+    width : 150px;
+    max-width: 150px;
+}
+
+#menuImage4 .leftBorder{
+    margin-left : 0;
+    background: linear-gradient(135deg, rgba(16,107,33,1) 0%, rgba(20,134,41,1) 26%, rgba(31,210,64,1) 57%, rgba(230,241,186,1) 100%);
+    
+}
+
+#menuImage4 .rightBorder {
+    margin-right : 0;
+    background: linear-gradient(135deg, rgba(230,241,186,1)  0%, rgba(31,210,64,1) 26%, rgba(20,134,41,1) 57%, rgba(16,107,33,1) 100%);
+}
+
+
+
+
+
+
+
+
+.menuContent{                           /* On parle des plats et des prix présents dans le menu*/
     margin-left : 20px;
     margin-right : 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.menuContent p {
+    margin-right: 10px;
 }
 
 .menuContent :nth-child(1){
@@ -215,12 +711,9 @@ footer p{
                     /* CSS concernant les media queries */
 
 
-@media all  and (max-width : 470px){
+@media all  and (max-width : 502px){
 
-    #menus img{
-        height : 180px;
-        width : 140px;
-    }
+    
     #prochainement {
         /* margin-top : 10px; */
         margin-bottom : 80px;
@@ -245,13 +738,50 @@ footer p{
 
     }
 
-    footer {
-        height : 30px;
+    .menuImage{
+        width: 90%;
     }
 
-    footer p {
+    .menuContent :nth-child(1){
+        margin-right: 5px;
+    }
+
+    footer {
+        height : 40px;
+        justify-content: flex-start;
+    }
+
+    footer button {
         margin : auto;
         font-size : 15px;
     }
 
+}
+
+@media all  and (max-width : 335px){            /*On pallie au design cassé à cause du gros titre pour le menu 3*/
+
+    #menuImage3 h3 {
+        font-size : 20px;
+    }
+    
+}
+
+@media all  and (max-width : 285px){ 
+    #menuImage2 h3 {
+        font-size : 17px;
+    }
+}
+
+@supports (-moz-appearance:none) {
+    #menuImage3 h5{
+        font-weight: lighter;
+        
+    }
+    
+    #menuImage3 p{
+        
+        font-weight: lighter;
+        
+        
+    }
 }
