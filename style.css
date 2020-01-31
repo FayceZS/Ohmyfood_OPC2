@@ -7,7 +7,6 @@ body{
     
     height : 100%;
     width : 100%;
-    
     margin : 0;
     display: flex;
     flex-direction: column;
@@ -41,10 +40,8 @@ header h1 a{
     width : 100%;
     margin : auto;
     margin-top:5vh;
-    
     justify-content: space-around;
     align-content: space-around;
-    
     flex-wrap: wrap;
     flex-grow : 2;
 }
@@ -127,14 +124,13 @@ header h1 a{
 
 #secondMenuAccueil span{
     background: linear-gradient(135deg, rgba(210,105,30,1) 0%, rgba(139,0,139,1) 58%, rgba(39,77,230,1) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-size : 12px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size : 12px;
   
 }
 
 #secondMenuAccueil a  {
-    
     color : rgba(210,105,30,1);
     font-size : 20px;
     font-family: "Oleo Script", cursive;
@@ -149,11 +145,12 @@ header h1 a{
     background: linear-gradient(135deg, rgb(221, 228, 250) 0%, rgb(242, 244, 250) 58%, rgb(242, 244, 250) 100%);
 }
 
-#thirdMenuAccueil a{
+#thirdMenuAccueil span{
     background: linear-gradient(135deg, rgba(14,75,239,1) 0%, rgba(72,119,244,1) 58%, rgba(147,174,248,1) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-family: "Dancing Script", cursive;
+    text-align: center;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Dancing Script", cursive;
 }
 
 #thirdMenuAccueil p{
@@ -164,12 +161,13 @@ header h1 a{
     background-color: #fdfffd;
 }
 
-#fourthMenuAccueil a{
+#fourthMenuAccueil span{
     background: linear-gradient(135deg, rgba(16,107,33,1) 0%, rgba(20,134,41,1) 12%, rgba(31,210,64,1) 40%, rgba(230,241,186,1) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-weight : bold;
-  font-family: "Kaushan Script", cursive;
+    text-align: center;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight : bold;
+    font-family: "Kaushan Script", cursive;
 }
 
 #fourthMenuAccueil p{
@@ -181,14 +179,12 @@ header h1 a{
     transition-property: all;
     transition-duration: 900ms;
     opacity: 0.7;
-    
-
 }
 
 
 #menus a:hover {                    
-    transform: scale(1.4);
     opacity: 1;
+    transform: scale(1.4);
 }
 
 #firstMenuAccueil a:hover{
@@ -325,14 +321,14 @@ footer button{
     
 }
 
-.menuImage {                                /* On parle du menu conteneur en entier */
+.menuImage {                                /* On parle du menu conteneur en entier dans les pages propre à chaque restaurant */
     display: flex;
     flex-direction : column;
-    height: max-content;
+    height: auto;
     width : auto;
     margin : auto;
     margin-top : 20px;
-    margin-bottom : 100px;
+    margin-bottom : 200px;
     text-align : center;
     
 
@@ -360,7 +356,7 @@ footer button{
 
 
 
-#menuImage1 {                                   /*On parle des menus propres à chaque restaurant*/
+#menuImage1 {                                   /*On parle des pages avec les menus propres à chaque restaurant*/
     font-family: 'Sniglet', cursive;
     background: linear-gradient(135deg, rgba(255,212,255,1) 0%, rgba(255,212,255,1) 74%, rgba(255,226,255,1) 100%);
     
@@ -422,8 +418,8 @@ background: linear-gradient(to top, #f7b234 0%, #e2fa07 10%, transparent 10.01%)
     margin-bottom: 30px;
     width: max-content;
     background: linear-gradient(135deg, rgba(210,105,30,1) 0%, rgba(139,0,139,1) 58%, rgba(39,77,230,1) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 #menuImage2 .menuItems div{
@@ -432,13 +428,13 @@ background: linear-gradient(to top, #f7b234 0%, #e2fa07 10%, transparent 10.01%)
 
 #menuImage2 h5{                                     /*Animation soulignement des titres*/
     background: linear-gradient(to top, #f7b234 0%, rgba(139,0,139,1) 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
-      transition: background-size .5s;
-      cursor: default;
-    }
+    transition: background-size .5s;
+    cursor: default;
+}
     
 #menuImage2 h5:hover{
-        background-size: 100% 100%;
-    }
+    background-size: 100% 100%;
+}
 
 
 
@@ -449,8 +445,8 @@ background: linear-gradient(to top, #f7b234 0%, #e2fa07 10%, transparent 10.01%)
 
 #menuImage2 .firstItem h5 {                     /*Animation soulignement des titres*/
     background: linear-gradient(to top, #f7b234 0%, rgba(210,105,30,1) 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
-      transition: background-size .5s;
-      cursor: default;
+    transition: background-size .5s;
+    cursor: default;
 }
 
 #menuImage2 .firstItem h5:hover{
@@ -463,8 +459,8 @@ background: linear-gradient(to top, #f7b234 0%, #e2fa07 10%, transparent 10.01%)
 
 #menuImage2 .secondItem h5{
     background: linear-gradient(to top, rgba(139,0,139,1) 0%, rgba(139,0,139,1) 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
-      transition: background-size .5s;
-      cursor: default;
+    transition: background-size .5s;
+    cursor: default;
 }
 
 #menuImage2 .secondItem h5:hover{
@@ -478,8 +474,8 @@ background: linear-gradient(to top, #f7b234 0%, #e2fa07 10%, transparent 10.01%)
 
 #menuImage2 .thirdItem h5{
     background: linear-gradient(to top, rgba(39,77,230,1) 0%, rgb(54, 89, 230) 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
-      transition: background-size .5s;
-      cursor: default;
+    transition: background-size .5s;
+    cursor: default;
 }
 
 #menuImage2 .thirdItem h5:hover{
@@ -503,8 +499,10 @@ background: linear-gradient(to top, #f7b234 0%, #e2fa07 10%, transparent 10.01%)
     width: max-content;
     padding-left: 5px;
     background: linear-gradient(135deg, rgba(14,75,239,1) 0%, rgba(72,119,244,1) 58%, rgba(147,174,248,1) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color : transparent;
 }
 
 
@@ -512,13 +510,13 @@ background: linear-gradient(to top, #f7b234 0%, #e2fa07 10%, transparent 10.01%)
     font-weight: 700;
     font-family: 'Petit Formal Script', cursive;
     background: linear-gradient(to top, rgba(14,75,239,1) 0%, rgba(147,174,248,1) 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
-      transition: background-size .5s;
-      cursor: default;
-    }
+    transition: background-size .5s;
+    cursor: default;
+}
     
 #menuImage3 h5:hover{
         background-size: 100% 100%;
-    }
+}
 
 #menuImage3 p{
     margin-right: 0;
@@ -574,8 +572,8 @@ background: linear-gradient(to top, #f7b234 0%, #e2fa07 10%, transparent 10.01%)
     font-size : 35px;
     width: auto;
     background: linear-gradient(135deg, rgba(16,107,33,1) 0%, rgba(20,134,41,1) 26%, rgba(31,210,64,1) 57%, rgba(230,241,186,1) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 #menuImage4 h5{                                     /*Animation soulignement des titres*/
@@ -585,13 +583,13 @@ background: linear-gradient(to top, #f7b234 0%, #e2fa07 10%, transparent 10.01%)
     width : 140px;
     font-family: 'Petit Formal Script', cursive;
     background: linear-gradient(to top, rgba(16,107,33,1) 0%, rgba(31,210,64,1) 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
-      transition: background-size .5s;
-      cursor: default;
-    }
+    transition: background-size .5s;
+    cursor: default;
+}
     
 #menuImage4 h5:hover{
-        background-size: 100% 100%;
-    }
+    background-size: 100% 100%;
+}
 
 
 
@@ -707,7 +705,20 @@ background: linear-gradient(to top, #f7b234 0%, #e2fa07 10%, transparent 10.01%)
     
 }
 
+#mentionLegales {                           /*CSS concernant la page mentions légales*/
+    margin : 150px auto 100px 40px;
+    width : 85%;
+}
 
+#mentionLegales a{
+    text-decoration: none;
+    color : black;
+}
+
+#headerMentionLegales {
+    position: fixed;
+    
+}
                     /* CSS concernant les media queries */
 
 
@@ -757,6 +768,8 @@ background: linear-gradient(to top, #f7b234 0%, #e2fa07 10%, transparent 10.01%)
     }
 
 }
+
+
 
 @media all  and (max-width : 335px){            /*On pallie au design cassé à cause du gros titre pour le menu 3*/
 
