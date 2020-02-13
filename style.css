@@ -46,15 +46,6 @@ header h1 a{
     flex-grow : 2;
 }
 
-#menus img {
-    height : 220px;
-    width:180px;
-    box-shadow: 0px 0px 2px 1px rgb(207, 201, 207);
-    margin-bottom:10px;
-    
-    
-}
-
 .menuAccueil {
     height : 220px;
     width:180px;
@@ -199,6 +190,7 @@ header h1 a{
     flex-grow : 1;
     display: flex;
     justify-content: center;
+    flex-wrap: nowrap;
     
 
 }
@@ -207,20 +199,6 @@ header h1 a{
     width: auto;
 }
 
-.loading {
-    font-size: 30px;
-  }
-  
-  .loading:after {
-    overflow: hidden;
-    display: inline-block;
-    vertical-align: bottom;
-    -webkit-animation: ellipsis steps(4,end) 2s infinite;      
-    animation: ellipsis steps(4,end) 2s infinite;
-    content: "\2026"; /* ascii code for the ellipsis character */
-    width: 0px;
-  }
-  
 
 
 #prochainement p{
@@ -238,6 +216,22 @@ header h1 a{
     margin-bottom: 80px;
     border-radius: 10px;
 }
+
+
+.loading {
+    font-size: 30px;
+  }
+  
+.loading:after {
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: bottom;
+    -webkit-animation: ellipsis steps(4,end) 2s infinite;      
+    animation: ellipsis steps(4,end) 2s infinite;
+    content: "\2026"; /* ascii code for the ellipsis character */
+    width: 0px;
+  }
+  
 
   @keyframes ellipsis {                 /*Animations points de suspension prochainement*/
     to {
@@ -261,10 +255,6 @@ footer{
     bottom : 0;
     height : 10%;
     overflow: hidden;
-    
-    
-    
-    
 }
 
 @keyframes shake {                          /*keyframe pour l'animation wiggle des bouttons*/
@@ -736,6 +726,7 @@ background: linear-gradient(to top, #f7b234 0%, #e2fa07 10%, transparent 10.01%)
         width:150px;
         height : 20px;
         font-size : 20px;
+        flex-wrap: nowrap;
     }
 
     header {
