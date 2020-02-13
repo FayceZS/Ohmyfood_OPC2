@@ -70,8 +70,11 @@ header h1 a{
     font-size: 14px;
 }
 
-.menuAccueil p{
+.textMenu{
     font-size : 20px;
+    padding-top:25px;
+    text-align: center;
+    display : block;
 }
 
 #firstMenuAccueil{
@@ -113,7 +116,7 @@ header h1 a{
     
 }
 
-#secondMenuAccueil span{
+#secondMenuAccueil :nth-child(1){
     background: linear-gradient(135deg, rgba(210,105,30,1) 0%, rgba(139,0,139,1) 58%, rgba(39,77,230,1) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -121,15 +124,17 @@ header h1 a{
   
 }
 
-#secondMenuAccueil a  {
+/* #secondMenuAccueil a  {
     color : rgba(210,105,30,1);
     font-size : 20px;
     font-family: "Oleo Script", cursive;
-}
+} */
 
-#secondMenuAccueil p{
-    margin-top: 10px;
+#secondMenuAccueil span span{
+    font-size: 22px;
     font-family: "PT Serif", serif;
+    color : rgba(210,105,30,1);
+    -webkit-text-fill-color: rgba(210,105,30,1);
 }
 
 #thirdMenuAccueil {
@@ -144,7 +149,7 @@ header h1 a{
     font-family: "Dancing Script", cursive;
 }
 
-#thirdMenuAccueil p{
+#thirdMenuAccueil :nth-child(2){
     font-family: "Bad Script", cursive;
 }
 
@@ -161,7 +166,7 @@ header h1 a{
     font-family: "Kaushan Script", cursive;
 }
 
-#fourthMenuAccueil p{
+#fourthMenuAccueil :nth-child(2){
     font-family: "Bad Script", cursive;
 }
 
